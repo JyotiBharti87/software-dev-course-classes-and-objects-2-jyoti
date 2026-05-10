@@ -15,8 +15,8 @@ public class BetterStudentManager {
 
         Student student = new Student ();
 
-        student.name = "Alice";
-        student.grade= 70.86;
+        student.name = name;
+        student.grade= grade;
 
         students.add(student);
     }
@@ -55,7 +55,7 @@ public class BetterStudentManager {
             studentsData.append(student.name);
             studentsData.append(" ");
             studentsData.append(student.grade);
-            studentsData.append("/n");
+            studentsData.append("\n");
         }
         return studentsData.toString();
     }
